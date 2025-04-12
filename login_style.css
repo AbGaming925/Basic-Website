@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Style */
+.page-header {
+    background-color: #007BFF;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.page-header span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+
+/* Main Section */
+main {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Form Title */
+form h1 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+form .form-example {
+    margin-bottom: 10px; /* Reduced gap between label and input */
+}
+
+form label {
+    font-size: 20px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #4267B2;
+    outline: none;
+}
+
+/* Forgot Password Link */
+a {
+    text-decoration: none;
+    color: #4267B2;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+/* Button Styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #4267B2; /* Facebook Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #365899;
+}
+
+/* Signup Button Styling */
+a.signup-button {
+    padding: 10px 20px;
+    background: #4CAF50; /* Light Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+a.signup-button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Flex Container for Buttons */
+div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Footer (Optional for now) */
+footer {
+    height: 50px;
+}

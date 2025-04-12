@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | My Vacation World</title>
+    <link rel="stylesheet" href="login_style.css" />
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Welcome to <span>My Vacation World</span></h1>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <div class="form-container">
+                <form action="/home_index.html" class="form-example">
+                    <h1 class="form-title">Log in to My Vacation World</h1>
+
+                    <div class="form-example">
+                        <input type="text" id="contact" name="contact"
+                            pattern="([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})|([0-9]{10})"
+                            placeholder="Enter email or mobile number" required />
+                    </div>
+
+                    <div class="form-example">
+                        <input type="password" name="pw" id="pw" placeholder="Enter Your Password" inputmode="text"
+                            autocomplete="family-name" autocapitalize="words" required />
+                    </div>
+
+                    <div class="button-group">
+                        <input type="submit" value="Login" class="login-button" />
+                        <a href="/password_index.html" class="forgot-link">Forgotten Password?</a>
+                        <hr>
+                        <a href="/signup_index.html" class="signup-button">Create new account</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>

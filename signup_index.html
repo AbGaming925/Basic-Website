@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | My Vacation World</title>
+    <link rel="stylesheet" href="signup_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to <span>My Vacation World</span></h1>
+    </header>
+    <main>
+        <div>
+            <form action="/index.html" class="form-example">
+                <h1>Create a new account</h1>
+                <p style="font-family: sans-serif; font-size: 18px;">It's quick and easy!</p>
+
+                <div class="form-example" style="display: flex; gap: 20px
+                ;">
+                    <input type="text" placeholder="First name" style="font-family: sans-serif; font-size: 20px;" required>
+                    <input type="text" placeholder="Last name" style="font-family: sans-serif; font-size: 20px;" required>
+                </div>
+
+                <br>
+
+                <!-- Gender -->
+                <div class="gender-section">
+                    <label for="gender">Gender</label>
+                    <div class="gender-options">
+                      <fieldset>
+                        <label for="gender_m">
+                          <input type="radio" value="male" name="gender" id="gender_m" required> Male
+                        </label>
+                      </fieldset>
+                      <fieldset>
+                        <label for="gender_f">
+                          <input type="radio" value="female" name="gender" id="gender_f" required> Female
+                        </label>
+                      </fieldset>
+                      <fieldset>
+                        <label for="gender_c">
+                          <input type="radio" value="custom" name="gender" id="gender_c" required> Custom
+                        </label>
+                      </fieldset>
+                    </div>
+                  </div>
+
+                <br>
+                
+                <!-- Email or Mobile Number -->
+                <div class="form-example">
+                    <input type="text" id="contact" name="contact"
+                        pattern="([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})|([0-9]{10})" style="font-family: sans-serif; font-size: 20px;"
+                        placeholder="email or mobile number" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-example">
+                    <br>
+                    <input type="password" name="pw" id="pw" style="font-family: sans-serif; font-size: 20px;" placeholder="New Password" inputmode="text"
+                        autocomplete="family-name" autocapitalize="words" required>
+                </div>
+
+                <br><br>
+
+                <!-- Inline CSS Signup Button -->
+                <div>
+                    <input type="submit" value="Signup"
+                        style="padding: 10px 20px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+                </div>
+
+            </form>
+
+            <br>
+
+            <a href="/index.html" style="font-family: sans-serif; font-size: medium;">Already have an account?</a>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+
+</html>

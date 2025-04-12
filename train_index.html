@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Trains | My Vacation World</title>
+    <link rel="stylesheet" href="book_style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; gap: 20px;">
+                <a href="/home_index.html">Home</a>
+                <a href="/flights_index.html" target="_self">Flight</a>
+                <a href="/bus_index.html">Bus</a>
+                <a href="/train_index.html" target="_self">Train</a>
+                <a href="/profile_index.html">Profile</a>
+                <a href="/contact_index.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>
+                Book Your Vacation
+            </h1>
+
+            <div style="display: flex;">
+                <fieldset>
+                    <form>
+                        <label for="from" style="font-family: sans-serif; font-size: 30px;">From</label><br>
+                        <input list="station_list" name="from" id="from" placeholder="Where to Start">
+                        <datalist id="station_list">
+                            <option value="Mumbai CST (CSTM)">
+                            <option value="Delhi Junction (DLI)">
+                            <option value="Bangalore City Junction (SBC)">
+                            <option value="Pune Junction (PUNE)">
+                            <option value="Hyderabad Deccan (HYB)">
+                            <option value="Kolkata Howrah Junction (HWH)">
+                            <option value="Chennai Central (MAS)">
+                            <option value="Ahmedabad Junction (ADI)">
+                            <option value="Jaipur Junction (JP)">
+                            <option value="Lucknow Charbagh NR (LKO)">
+                            <option value="Kanpur Central (CNB)">
+                            <option value="Nagpur Junction (NGP)">
+                            <option value="Visakhapatnam Junction (VSKP)">
+                            <option value="Bhopal Junction (BPL)">
+                            <option value="Patna Junction (PNBE)">
+                            <option value="Indore Junction BG (INDB)">
+                            <option value="Vadodara Junction (BRC)">
+                            <option value="Ludhiana Junction (LDH)">
+                            <option value="Agra Cantt (AGC)">
+                            <option value="Nashik Road (NK)">
+                            <option value="Faridabad (FDB)">
+                            <option value="Meerut City Junction (MTC)">
+                            <option value="Rajkot Junction (RJT)">
+                            <option value="Kalyan Junction (KYN)">
+                            <option value="Vasai Road (BSR)">
+                            <option value="Varanasi Junction (BSB)">
+                            <option value="Srinagar (SINA)">
+                            <option value="Aurangabad (AWB)">
+                            <option value="Dhanbad Junction (DHN)">
+                            <option value="Amritsar Junction (ASR)">
+                            <option value="Panvel (PNVL)"> <!-- Closest major station to Navi Mumbai -->
+                            <option value="Ranchi Junction (RNC)">
+                            <option value="Howrah Junction (HWH)">
+                            <option value="Jabalpur Junction (JBP)">
+                            <option value="Gwalior Junction (GWL)">
+                            <option value="Vijayawada Junction (BZA)">
+
+
+                        </datalist>
+                        <br>
+                        <label for="from" style="font-family: sans-serif; font-size: 25px;">India</label><br>
+
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form>
+                        <label for="to" style="font-family: sans-serif; font-size: 30px;">To</label><br>
+                        <input list="station_list" name="to" id="to" placeholder="Where to Go">
+                        <datalist id="station_list">
+                            <option value="Mumbai CST (CSTM)">
+                            <option value="Delhi Junction (DLI)">
+                            <option value="Bangalore City Junction (SBC)">
+                            <option value="Pune Junction (PUNE)">
+                            <option value="Hyderabad Deccan (HYB)">
+                            <option value="Kolkata Howrah Junction (HWH)">
+                            <option value="Chennai Central (MAS)">
+                            <option value="Ahmedabad Junction (ADI)">
+                            <option value="Jaipur Junction (JP)">
+                            <option value="Lucknow Charbagh NR (LKO)">
+                            <option value="Kanpur Central (CNB)">
+                            <option value="Nagpur Junction (NGP)">
+                            <option value="Visakhapatnam Junction (VSKP)">
+                            <option value="Bhopal Junction (BPL)">
+                            <option value="Patna Junction (PNBE)">
+                            <option value="Indore Junction BG (INDB)">
+                            <option value="Vadodara Junction (BRC)">
+                            <option value="Ludhiana Junction (LDH)">
+                            <option value="Agra Cantt (AGC)">
+                            <option value="Nashik Road (NK)">
+                            <option value="Faridabad (FDB)">
+                            <option value="Meerut City Junction (MTC)">
+                            <option value="Rajkot Junction (RJT)">
+                            <option value="Kalyan Junction (KYN)">
+                            <option value="Vasai Road (BSR)">
+                            <option value="Varanasi Junction (BSB)">
+                            <option value="Srinagar (SINA)">
+                            <option value="Aurangabad (AWB)">
+                            <option value="Dhanbad Junction (DHN)">
+                            <option value="Amritsar Junction (ASR)">
+                            <option value="Panvel (PNVL)"> <!-- Closest major station to Navi Mumbai -->
+                            <option value="Ranchi Junction (RNC)">
+                            <option value="Howrah Junction (HWH)">
+                            <option value="Jabalpur Junction (JBP)">
+                            <option value="Gwalior Junction (GWL)">
+                            <option value="Vijayawada Junction (BZA)">
+
+
+                        </datalist>
+                        <br>
+                        <label for="from" style="font-family: sans-serif; font-size: 25px;">India</label><br>
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form>
+                        <!-- Include Flatpickr CSS & JS from CDN -->
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+                        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+                        <!-- Travel Date -->
+                        <label for="travelDate" style="font-family: sans-serif; font-size: 25px;">Travel Date:</label>
+                        <input type="text" id="travelDate" name="travelDate">
+                        <br><br>
+
+                        <!-- Return Date -->
+                        <label for="returnDate" style="font-family: sans-serif; font-size: 25px;">Return Date:</label>
+                        <input type="text" id="returnDate" name="returnDate">
+
+                        <script>
+                            flatpickr("#travelDate", {
+                                dateFormat: "d M Y",
+                                minDate: "today"
+                            });
+
+                            flatpickr("#returnDate", {
+                                dateFormat: "d M Y",
+                                minDate: "today"
+                            });
+                        </script>
+
+                    </form>
+                </fieldset>
+
+            </div>
+
+            <br><br>
+
+            <div>
+                <input type="submit" value="Search Trains"
+                style="font-family: sans-serif; font-size: 18px; padding: 5px 20px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

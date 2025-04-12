@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flights | My Vacation World</title>
+    <link rel="stylesheet" href="book_style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; gap: 20px;">
+                <a href="/home_index.html">Home</a>
+                <a href="/flights_index.html" target="_self">Flight</a>
+                <a href="/bus_index.html">Bus</a>
+                <a href="/train_index.html" target="_self">Train</a>
+                <a href="/profile_index.html">Profile</a>
+                <a href="/contact_index.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>
+                Book Your Vacation
+            </h1>
+
+            <div style="display: flex;">
+                <fieldset>
+                    <form>
+                        <label for="from" style="font-family: sans-serif; font-size: 30px;">From</label><br>
+                        <input list="airport_list" name="from" id="from" placeholder="Where to Start">
+                        <datalist id="airport_list">
+                            <option value="Chhatrapati Shivaji Maharaj International Airport, Mumbai, Maharashtra">
+                            <option value="Indira Gandhi International Airport, Delhi, Delhi">
+                            <option value="Kempegowda International Airport, Bangalore, Karnataka">
+                            <option value="Pune International Airport, Pune, Maharashtra">
+                            <option value="Rajiv Gandhi International Airport, Hyderabad, Telangana">
+                            <option value="Netaji Subhash Chandra Bose International Airport, Kolkata, West Bengal">
+                            <option value="Chennai International Airport, Chennai, Tamil Nadu">
+                            <option value="Sardar Vallabhbhai Patel International Airport, Ahmedabad, Gujarat">
+                            <option value="Sanganer Airport, Jaipur, Rajasthan">
+                            <option value="Chaudhary Charan Singh International Airport, Lucknow, Uttar Pradesh">
+                            <option value="Kanpur Airport, Kanpur, Uttar Pradesh">
+                            <option value="Dr. Babasaheb Ambedkar International Airport, Nagpur, Maharashtra">
+                            <option value="Visakhapatnam International Airport, Visakhapatnam, Andhra Pradesh">
+                            <option value="Raja Bhoj International Airport, Bhopal, Madhya Pradesh">
+                            <option value="Lok Nayak Jayaprakash Airport, Patna, Bihar">
+                            <option value="Devi Ahilya Bai Holkar Airport, Indore, Madhya Pradesh">
+                            <option value="Sardar Vallabhbhai Patel International Airport, Vadodara, Gujarat">
+                            <option value="Sri Guru Ram Dass Jee International Airport, Amritsar, Punjab">
+                            <option value="Kheria Airport, Agra, Uttar Pradesh">
+                            <option value="Ozar Airport, Nashik, Maharashtra">
+                            <option value="Indira Gandhi International Airport, Faridabad, Haryana">
+                            <option value="Meerut Airport, Meerut, Uttar Pradesh">
+                            <option value="Sardar Vallabhbhai Patel International Airport, Rajkot, Gujarat">
+                            <option
+                                value="Chhatrapati Shivaji Maharaj International Airport, Kalyan-Dombivli, Maharashtra">
+                            <option value="Chhatrapati Shivaji Maharaj International Airport, Vasai-Virar, Maharashtra">
+                            <option value="Lal Bahadur Shastri International Airport, Varanasi, Uttar Pradesh">
+                            <option value="Sheikh ul-Alam International Airport, Srinagar, Jammu and Kashmir">
+                            <option value="Chikkalthana Airport, Aurangabad, Maharashtra">
+                            <option value="Birsa Munda Airport, Dhanbad, Jharkhand">
+                            <option value="Sri Guru Ram Dass Jee International Airport, Amritsar, Punjab">
+                            <option value="Chhatrapati Shivaji Maharaj International Airport, Navi Mumbai, Maharashtra">
+                            <option value="Birsa Munda Airport, Ranchi, Jharkhand">
+                            <option value="Netaji Subhash Chandra Bose International Airport, Howrah, West Bengal">
+                            <option value="Jabalpur Airport, Jabalpur, Madhya Pradesh">
+                            <option value="Gwalior Airport, Gwalior, Madhya Pradesh">
+                            <option value="Vijayawada Airport, Vijayawada, Andhra Pradesh">
+
+
+                        </datalist>
+                        <br>
+                        <label for="from" style="font-family: sans-serif; font-size: 25px;">India</label><br>
+
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form>
+                        <label for="to" style="font-family: sans-serif; font-size: 30px;">To</label><br>
+                        <input list="airport_list" name="to" id="to" placeholder="Where to Go">
+                        <datalist id="airport_list">
+                            <option value="Mumbai, Maharashtra">
+                            <option value="Delhi, Delhi">
+                            <option value="Bangalore, Karnataka">
+                            <option value="Pune, Maharashtra">
+                            <option value="Hyderabad, Telangana">
+                            <option value="Kolkata, West Bengal">
+                            <option value="Chennai, Tamil Nadu">
+                            <option value="Ahmedabad, Gujarat">
+                            <option value="Jaipur, Rajasthan">
+                            <option value="Lucknow, Uttar Pradesh">
+                            <option value="Kanpur, Uttar Pradesh">
+                            <option value="Nagpur, Maharashtra">
+                            <option value="Visakhapatnam, Andhra Pradesh">
+                            <option value="Bhopal, Madhya Pradesh">
+                            <option value="Patna, Bihar">
+                            <option value="Indore, Madhya Pradesh">
+                            <option value="Vadodara, Gujarat">
+                            <option value="Ludhiana, Punjab">
+                            <option value="Agra, Uttar Pradesh">
+                            <option value="Nashik, Maharashtra">
+                            <option value="Faridabad, Haryana">
+                            <option value="Meerut, Uttar Pradesh">
+                            <option value="Rajkot, Gujarat">
+                            <option value="Kalyan-Dombivli, Maharashtra">
+                            <option value="Vasai-Virar, Maharashtra">
+                            <option value="Varanasi, Uttar Pradesh">
+                            <option value="Srinagar, Jammu and Kashmir">
+                            <option value="Aurangabad, Maharashtra">
+                            <option value="Dhanbad, Jharkhand">
+                            <option value="Amritsar, Punjab">
+                            <option value="Navi Mumbai, Maharashtra">
+                            <option value="Ranchi, Jharkhand">
+                            <option value="Howrah, West Bengal">
+                            <option value="Jabalpur, Madhya Pradesh">
+                            <option value="Gwalior, Madhya Pradesh">
+                            <option value="Vijayawada, Andhra Pradesh">
+
+
+                        </datalist>
+                        <br>
+                        <label for="from" style="font-family: sans-serif; font-size: 25px;">India</label><br>
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form>
+                        <!-- Include Flatpickr CSS & JS from CDN -->
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+                        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+                        <!-- Travel Date -->
+                        <label for="travelDate" style="font-family: sans-serif; font-size: 25px;">Travel Date:</label>
+                        <input type="text" id="travelDate" name="travelDate">
+                        <br><br>
+
+                        <!-- Return Date -->
+                        <label for="returnDate" style="font-family: sans-serif; font-size: 25px;">Return Date:</label>
+                        <input type="text" id="returnDate" name="returnDate">
+
+                        <script>
+                            flatpickr("#travelDate", {
+                                dateFormat: "d M Y",
+                                minDate: "today"
+                            });
+
+                            flatpickr("#returnDate", {
+                                dateFormat: "d M Y",
+                                minDate: "today"
+                            });
+                        </script>
+
+                    </form>
+                </fieldset>
+
+            </div>
+
+            <br><br>
+
+            <div>
+                <input type="submit" value="Search Flights"
+                style="font-family: sans-serif; font-size: 18px; padding: 5px 20px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
